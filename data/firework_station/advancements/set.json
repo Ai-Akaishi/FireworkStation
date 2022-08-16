@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"set": {
+			"trigger": "item_used_on_block",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:armor_stand"
+					],
+					"nbt": "{display:{Name:'{\"text\":\"FireworkStation\"}'}}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "firework_station:set/"
+	}
+}
