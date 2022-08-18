@@ -8,6 +8,10 @@ Fireworks Auto Play Datapack
 - 1.18.2
 - 1.19
 
+## 一緒に入れてね / Dependencies
+
+数学関数ライブラリAiMath(<https://github.com/Ai-Akaishi/AiMath>)  
+
 ## 花火の種類 / Types of Fireworks
 
 ### Summer 2022
