@@ -1,0 +1,25 @@
+{
+	"criteria": {
+		"set": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": [
+								"minecraft:armor_stand"
+							],
+							"components": {
+								"custom_name": "\"FireworkStation\""
+							}
+						}
+					}
+				]
+			  }
+		}
+	},
+	"rewards": {
+		"function": "firework_station:set/"
+	}
+}

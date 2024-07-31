@@ -1,95 +1,107 @@
 # FireworkStation
 
-Fireworks Auto Play Datapack  
-花火大会データパック
+[日本語で読む](README_ja.md)
 
-## 動作確認済みバージョン / Verified minecraft versions
+Fireworks Auto Play Datapack
+![Sample Fireworks](sample.png)
+
+## Tested Versions
+
+- 1.21
+
+For the following versions, please check Releases on the right.
 
 - 1.18.2
 - 1.19
 
-## 一緒に入れてね / Dependencies
-
-数学関数ライブラリAiMath(<https://github.com/Ai-Akaishi/AiMath>)  
-
-## 花火の種類 / Types of Fireworks
+## Types of Fireworks
 
 ### Summer 2022
 
-1. オーダー / Ordered  
-  左から順番に打ち上がります / Fireworks are launched in order from left to right.
-2. クロス / Cross  
-  同時に交差しながら打ち上がります / Fireworks are launched while crossing each other at the same time.
-3. サークル / Circle  
-  大きな円を描くように打ち上がります / Fireworks are launched in a large circle.
-4. ガーデン / Gerden  
-  庭のように咲き広がります / Fireworks bloom and spread like a garden.
-5. オーロラ / Aurora  
-  一面に並んで咲き広がります / Fireworks bloom and spread side by side all over the area.
-6. フラワー / Flower  
-  扇状に咲き広がります / Fireworks bloom and spread in a fan shape.
-7. ウィッチ / Witch  
-  左から順番にホウキのように咲きます / Fireworks bloom like brooms, in order from left to right
-8. コメット / Commet (低確率 / low probability)
-  見ている人に近づくように咲きます。 / Fireworks bloom close to you.
+1. **Order**  
+   Launches in sequence from left to right.
+2. **Cross**  
+   Launches crossing each other simultaneously.
+3. **Circle**  
+   Launches forming a large circle.
+4. **Garden**  
+   Blooms like a garden.
+5. **Aurora**  
+   Spreads across the sky.
+6. **Flower**  
+   Blooms in a fan shape.
+7. **Witch**  
+   Blooms like a broom from left to right.
+8. **Comet (Low Chance)**  
+   Appears as if approaching the viewers.
 
-## 使い方 / How To Use
+### Summer 2024
 
-### 基本 / Basics
+Occasionally, fireworks will appear as items (excluding Flower/Witch/Comet).  
+This can be disabled via a command.
 
-防具立てに FireworkStation と名付けて設置するだけ！  
-複数設置するとそれぞれから打ちあがります。  
-全て壊すと止まります。  
-Just name armor_stand FireworkStation and place it there!  
-If you place more than one, they will be launched from each.  
-If you break all of them, it will stop.
+## How to Use
 
-### コマンドによる操作 / Command Operations
+### Basics
 
-```nim
-設置 / place  
-/function #firework_station:station/place  
+Just place an armor stand named "FireworkStation"!  
+Multiple stands will launch fireworks from each one.  
+Breaking all stands will stop the fireworks.  
+
+### Command Operations
+
+```mcfunction
+Enable item fireworks
+/function #firework_station:item_mode/on
   
-透明化 / make invisible  
-/function #firework_station:station/hide  
+Disable item fireworks
+/function #firework_station:item_mode/off
+```
+
+```mcfunction
+Place the firework station
+/function #firework_station:station/place
   
-透明化解除 / remove invisibility  
+Make the firework station invisible
+/function #firework_station:station/hide
+  
+Make the firework station visible
 /function #firework_station:station/show
 ```
 
-```nim
-花火打ち上げ開始 / enable fireworks launch  
-/function #firework_station:auto/on  
+```mcfunction
+Start launching fireworks
+/function #firework_station:auto/on
   
-花火打ち上げ停止 / disable fireworks launch  
+Stop launching fireworks
 /function #firework_station:auto/off
 ```
 
-```nim
-夜モード / night mode  
-以下のゲームルールに変更します。 / Change to the following game rules.  
-1. 夜に変更 / change to night  
-2. 日照サイクル無効 / disable daylight cycle  
-3. 敵スポーン無効 / disable monster spawn  
+```mcfunction
+Night Mode
+Changes the following game rules:
+1. Switches to night
+2. Disables daylight cycle
+3. Disables enemy spawning
   
-有効化 / enable  
-/function #firework_station:night_mode/on  
-無効化 / disable  
+Enable
+/function #firework_station:night_mode/on
+Disable
 /function #firework_station:night_mode/off
 ```
 
-```nim
-コマンド以外での操作の制限 / Limit operations other than commands
-制限する / Limit
+```mcfunction
+Restrict operations to commands only
+Restrict
 /function #firework_station:command_only/true
-制限しない / Do not limit
+Do not restrict
 /function #firework_station:command_only/false
 ```
 
-## 連絡はこちら / Contact
+## Contact
 
 <https://twitter.com/AiAkaishi>
 
-## ライセンス / LICENSE
+## License
 
 These codes are released under the MIT License, see LICENSE.
