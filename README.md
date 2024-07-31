@@ -50,7 +50,7 @@ Breaking all stands will stop the fireworks.
 
 ### Command Operations
 
-```mcfunction
+```nim
 Enable item fireworks
 /function #firework_station:item_mode/on
   
@@ -58,7 +58,7 @@ Disable item fireworks
 /function #firework_station:item_mode/off
 ```
 
-```mcfunction
+```nim
 Place the firework station
 /function #firework_station:station/place
   
@@ -69,7 +69,7 @@ Make the firework station visible
 /function #firework_station:station/show
 ```
 
-```mcfunction
+```nim
 Start launching fireworks
 /function #firework_station:auto/on
   
@@ -77,7 +77,7 @@ Stop launching fireworks
 /function #firework_station:auto/off
 ```
 
-```mcfunction
+```nim
 Night Mode
 Changes the following game rules:
 1. Switches to night
@@ -90,7 +90,7 @@ Disable
 /function #firework_station:night_mode/off
 ```
 
-```mcfunction
+```nim
 Restrict operations to commands only
 Restrict
 /function #firework_station:command_only/true

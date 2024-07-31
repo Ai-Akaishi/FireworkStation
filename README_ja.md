@@ -50,7 +50,7 @@
 
 ### コマンドによる操作
 
-```mcfunction
+```nim
 アイテム花火有効化
 /function #firework_station:item_mode/on
   
@@ -58,7 +58,7 @@
 /function #firework_station:item_mode/off
 ```
 
-```mcfunction
+```nim
 設置
 /function #firework_station:station/place
   
@@ -69,7 +69,7 @@
 /function #firework_station:station/show
 ```
 
-```mcfunction
+```nim
 花火打ち上げ開始
 /function #firework_station:auto/on
   
@@ -77,7 +77,7 @@
 /function #firework_station:auto/off
 ```
 
-```mcfunction
+```nim
 夜モード
 以下のゲームルールに変更します。
 1. 夜に変更
@@ -90,7 +90,7 @@
 /function #firework_station:night_mode/off
 ```
 
-```mcfunction
+```nim
 コマンド以外での操作の制限
 制限する
 /function #firework_station:command_only/true
