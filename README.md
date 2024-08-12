@@ -7,6 +7,7 @@ Fireworks Auto Play Datapack
 
 ## Tested Versions
 
+- 1.21.1
 - 1.21
 
 For the following versions, please check Releases on the right.

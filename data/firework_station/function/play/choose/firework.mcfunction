@@ -15,4 +15,4 @@ execute store result storage firework_station: explosion.has_trail byte 1 run ra
 
 ## CustomFirework抽選
 data modify storage firework_station: explosion.custom_shape set value 0
-execute if data storage firework_station: item_mode if predicate firework_station:item_mode store result storage firework_station: explosion.custom_shape int 1 run random value 1..5
+execute unless data storage firework_station: {item_mode:false} if predicate firework_station:item_mode store result storage firework_station: explosion.custom_shape int 1 run random value 1..5
